@@ -7,18 +7,15 @@ namespace InfraDev_FX
     {
         private static void Main(string[] args)
         {
-            Person p1 = new Person("toto", "tata");
+            Person p1 = new Person();
 
-            Console.WriteLine(p1);
-        
-            string _firstname;// = Console.ReadLine("Please enter a firstname :");
-            string _lastname;// = Console.ReadLine("Please enter a lastname :");
+            Console.Write("Your firstname : ");
+            p1.Firstname = Console.ReadLine();
+            Console.Write("Your lastname : ");
+            p1.Lastname= Console.ReadLine(); 
 
-            string a;
-            Console.Write("Veuillez taper : ");
-            a = Console.ReadLine();
-            Console.WriteLine("tatapé : " + a);
+            Console.Write($"Your firstname is {p1.Firstname} and your lastname is {p1.Lastname}.");
+            
         }
-
     }
 }

@@ -8,13 +8,14 @@ namespace InfraDev_FX
 {
     internal class Person
     {
-       string firstname;
-       string lastname;  
-        
+       public string Firstname { get; set; }
+       public string Lastname { get; set; }
+        public Person() { }
+
         public Person(string _name, string _lname)
         {
-            this.firstname = _name;
-            this.lastname = _lname;
+            this.Firstname = _name;
+            this.Lastname = _lname;
         }
     }
 }
