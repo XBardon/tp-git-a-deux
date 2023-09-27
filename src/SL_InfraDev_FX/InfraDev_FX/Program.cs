@@ -7,15 +7,20 @@ namespace InfraDev_FX
     {
         private static void Main(string[] args)
         {
-            Person p1 = new Person();
+            Person myPerson = new Person();
 
             Console.Write("Your firstname : ");
-            p1.Firstname = Console.ReadLine();
+            myPerson.Firstname = Console.ReadLine();
             Console.Write("Your lastname : ");
-            p1.Lastname= Console.ReadLine(); 
+            myPerson.Lastname= Console.ReadLine();
 
-            Console.Write($"Your firstname is {p1.Firstname} and your lastname is {p1.Lastname}.");
-            
+            Console.Write(" === \n");
+            int x = 0;
+            do{ 
+            Console.Write($"Your firstname is {myPerson.Firstname} and your lastname is {myPerson.Lastname}.\n");
+                x++;
+            }
+            while (x < 2);
         }
     }
 }
