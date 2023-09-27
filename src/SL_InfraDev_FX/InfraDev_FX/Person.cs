@@ -8,8 +8,8 @@ namespace InfraDev_FX
 {
     internal class Person
     {
-        private string firstname;
-        private string lastname;  
+       string firstname;
+       string lastname;  
         
         public Person(string _name, string _lname)
         {
