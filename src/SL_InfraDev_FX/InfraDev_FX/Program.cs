@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InfraDev_FX;
+using System;
 using System.IO;
 
 namespace InfraDev_FX
@@ -7,7 +8,10 @@ namespace InfraDev_FX
     {
         private static void Main(string[] args)
         {
+            IPersonContainer myPersonContainer = new PeopleContainer();
+
             Person myPerson = new Person();
+
 
             Console.Write("Your firstname : ");
             myPerson.Firstname = Console.ReadLine();
@@ -16,11 +20,13 @@ namespace InfraDev_FX
 
             Console.Write(" === \n");
             int x = 0;
-            do{ 
-            Console.Write($"Your firstname is {myPerson.Firstname} and your lastname is {myPerson.Lastname}.\n");
+            do
+            {
+                Console.Write($"Your firstname is {myPerson.Firstname} and your lastname is {myPerson.Lastname}.\n");
                 x++;
             }
             while (x < 2);
+
         }
     }
 }
